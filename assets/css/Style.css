@@ -1,0 +1,233 @@
+:root{
+    --borderstyle: ridge;
+    --border-color: rgb(217, 185, 227);
+    --border-width:6px;
+    --left-padding:10%;
+    --right-padding:5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    height: 100%;
+}
+h1 {
+    font-family: "Comfortaa", cursive;
+  }
+  
+  h2 {
+    font-family: "Crimson Text", serif;
+    width: 60px;
+  }
+  
+  p,
+  a {
+    font-family: "Poppins", sans-serif;
+  }
+header{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+header h1{
+    padding-left: 20px;
+    
+}
+.list{
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 700px;
+    
+}
+
+.list-item{
+
+    padding-left: 40px;
+    text-decoration: none;
+}
+header nav a{
+    text-decoration: none;
+    font-size: larger;
+}
+header nav{
+    position: relative;
+}
+#About-me{
+    background-color: rgb(228, 246, 246);
+    display: flex;
+    height: 100%;
+}
+#About-me h2{
+    border-right: var(--borderstyle);
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+}
+#About-me p{
+    padding-left: 5%;
+}
+#My-projects{
+    background-color:  rgb(228, 246, 246);
+    display: flex;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#My-projects h2{
+    
+    border-right: var(--borderstyle);
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+}
+#My-projects nav{
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#My-projects nav div{
+    margin-right: 50px;
+    max-width: 300px;
+    max-height: 500px;
+}
+#My-projects nav div img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+#My-projects nav div img:hover{
+    
+    transform: scale(1.2);
+}
+#My-projects nav div h2{
+    text-align: center;
+}
+#Contact-me{
+    background-color:  rgb(228, 246, 246);
+    display: flex;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#Contact-me h2{
+    
+    border-right: var(--borderstyle);
+    border-color: var(--border-color);
+    border-width: var(--border-width);
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+}
+#Contact-me ul{
+    padding-left: 5%;
+    font-size: large;
+
+}
+#Contact-me ul li{
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(113, 113, 176);
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+    
+}
+footer p{
+    font-family: "Comfortaa", cursive;
+}
+@media screen and (max-width: 1000px) {
+    .list{
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin-left: 550px;
+        
+    }
+    .list-item{
+
+        padding: 5px;
+        text-decoration: none;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .list{
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin-left: 450px;
+        
+    }
+    .list-item{
+
+        padding: 5px;
+        text-decoration: none;
+    }
+
+}  
+@media screen and (max-width: 800px) {
+    .list{
+
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin-left: 350px;
+        
+    }
+    .list-item{
+
+        padding: 5px;
+        text-decoration: none;
+    }
+
+}   
+
+@media screen and (max-width: 700px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        background-color: aquamarine;
+        display: block;
+        height: 100%;
+    }
+    .list{
+
+        list-style-type: none;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        
+    }
+    header h1{
+        text-align: center;
+    }
+}
