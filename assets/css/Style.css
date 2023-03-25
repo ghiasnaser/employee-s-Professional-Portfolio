@@ -2,8 +2,9 @@
     --borderstyle: ridge;
     --border-color: rgb(217, 185, 227);
     --border-width:6px;
-    --left-padding:10%;
-    --right-padding:5%;
+    --left-padding:60px;
+    --right-padding:0;
+    --item-width:15%;
 }
 body{
     padding: 0;
@@ -32,29 +33,43 @@ header{
     height: 100%;
 }
 header h1{
+    padding-top: 20px;
     padding-left: 20px;
     
 }
+header img{
+    width: 115px;
+    height: 135px;
+    padding-left: 20px;
+}
 .list{
-
+    padding-top: 20px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
     margin-left: 650px;
-    
+        
 }
 
 .list-item{
-
-    padding-left: 30px;
+    padding-left: 20px;
     text-decoration: none;
+    
 }
 header nav a{
     text-decoration: none;
     font-size: larger;
+    color: rgb(4, 4, 130);
 }
+header nav .list-item:hover{
+        text-decoration: none;
+        font-size: medium;
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 0.30rem rgb(255, 0, 0));
+}
+
 header nav{
     position: relative;
 }
@@ -62,8 +77,10 @@ header nav{
     background-color: rgb(228, 246, 246);
     display: flex;
     height: 100%;
+    width: 100%;
 }
 #About-me h2{
+    width: var(--item-width);
     border-right: var(--borderstyle);
     border-color: var(--border-color);
     border-width: var(--border-width);
@@ -72,16 +89,18 @@ header nav{
 }
 #About-me p{
     padding-left: 5%;
+    width: 100%;
 }
 #My-projects{
     background-color:  rgb(228, 246, 246);
     display: flex;
     height: 100%;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 #My-projects h2{
-    
+    width: var(--item-width);
     border-right: var(--borderstyle);
     border-color: var(--border-color);
     border-width: var(--border-width);
@@ -92,6 +111,7 @@ header nav{
     padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 #My-projects nav div{
     margin-right: 50px;
@@ -106,6 +126,11 @@ header nav{
 #My-projects nav div img:hover{
     
     transform: scale(1.2);
+    border-width: 5px;
+    padding: 0;
+    margin: 10px;
+    filter: drop-shadow(0 0 1rem rgb(249, 234, 149));
+   
 }
 #My-projects nav div h2{
     text-align: center;
@@ -118,7 +143,7 @@ header nav{
     padding-bottom: 0;
 }
 #Contact-me h2{
-    
+    width: var(--item-width);
     border-right: var(--borderstyle);
     border-color: var(--border-color);
     border-width: var(--border-width);
@@ -128,6 +153,7 @@ header nav{
 #Contact-me ul{
     padding-left: 5%;
     font-size: large;
+    width: 100%;
 
 }
 #Contact-me ul li{
@@ -152,7 +178,17 @@ footer{
 footer p{
     font-family: "Comfortaa", cursive;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
     .list{
 
         list-style-type: none;
@@ -160,7 +196,7 @@ footer p{
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 5px;
-        margin-left: 550px;
+        margin-left: 480px;
         
     }
     .list-item{
@@ -169,8 +205,18 @@ footer p{
         text-decoration: none;
     }
 
-}
-@media screen and (max-width: 900px) {
+} 
+@media screen and (max-width: 1000px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
     .list{
 
         list-style-type: none;
@@ -178,7 +224,7 @@ footer p{
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 5px;
-        margin-left: 450px;
+        margin-left: 430px;
         
     }
     .list-item{
@@ -188,15 +234,25 @@ footer p{
     }
 
 }  
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
     .list{
 
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         margin-top: 5px;
-        margin-left: 350px;
+        margin-left: 330px;
         
     }
     .list-item{
@@ -205,29 +261,74 @@ footer p{
         text-decoration: none;
     }
 
-}   
+}
+@media screen and (max-width: 800px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    header nav{
+        display: block;
+    }
+    .list{
 
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 5px;
+        margin-left: 231px;
+        
+    }
+    .list-item{
+
+        padding: 5px;
+        text-decoration: none;
+    }
+
+} 
 @media screen and (max-width: 700px) {
     *{
         padding: 0;
         margin: 0;
     }
+
     header{
         background-color: aquamarine;
         display: block;
         height: 100%;
+        margin: auto;
     }
-    .list{
-
-        list-style-type: none;
+    header img{
         display: block;
-        flex-direction: column;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
+        margin: auto;
+       
         
     }
     header h1{
         text-align: center;
+
+        margin: auto;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
+    header nav{
+   
+        padding: 0;
+        margin: 0;
+    }
+    header nav .list{
+        margin-left: 0;
+    }
+    header nav .list .list-item{
+        text-align: center;
+    }
+  
 }
