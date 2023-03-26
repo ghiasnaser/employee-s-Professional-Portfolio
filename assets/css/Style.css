@@ -43,7 +43,7 @@ header img{
     padding-left: 20px;
 }
 header nav{
-    margin-left: 400px;
+    margin-left: 500px;
 }
 .list{
     padding-top: 20px;
@@ -92,6 +92,7 @@ header nav{
 #About-me p{
     padding-left: 5%;
     width: 100%;
+    margin-bottom: 20px;
 }
 #My-projects{
     background-color:  rgb(228, 246, 246);
@@ -117,13 +118,14 @@ header nav{
 }
 #My-projects nav div{
     margin-right: 50px;
+    margin-top: 50px;
     max-width: 300px;
     max-height: 500px;
 }
 #My-projects nav div img{
     width: 300px;
     height: 300px;
-    padding: 10px;
+    padding: 15px;
 }
 #My-projects nav div img:hover{
     
@@ -141,6 +143,7 @@ header nav{
     background-color:  rgb(228, 246, 246);
     display: flex;
     height: 100%;
+    padding-top: 20px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -191,6 +194,9 @@ footer p{
         flex-wrap: nowrap;
         height: 100%;
     }
+    header nav{
+        margin-left: 480px;
+    }
     .list{
 
         list-style-type: none;
@@ -198,7 +204,7 @@ footer p{
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 5px;
-        margin-left: 480px;
+        
         
     }
     .list-item{
@@ -219,6 +225,9 @@ footer p{
         flex-wrap: nowrap;
         height: 100%;
     }
+    header nav{
+        margin-left: 430px;
+    }
     .list{
 
         list-style-type: none;
@@ -226,7 +235,7 @@ footer p{
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 5px;
-        margin-left: 430px;
+        
         
     }
     .list-item{
@@ -247,6 +256,9 @@ footer p{
         flex-wrap: nowrap;
         height: 100%;
     }
+    header nav{
+        margin-left: 330px;
+    }
     .list{
 
         list-style-type: none;
@@ -254,7 +266,7 @@ footer p{
         flex-direction: column;
         flex-wrap: nowrap;
         margin-top: 5px;
-        margin-left: 330px;
+      
         
     }
     .list-item{
@@ -277,6 +289,7 @@ footer p{
     }
     header nav{
         display: block;
+        margin-left: 231px;
     }
     .list{
 
@@ -285,7 +298,7 @@ footer p{
         flex-direction: column;
         flex-wrap: nowrap;
         margin-top: 5px;
-        margin-left: 231px;
+        
         
     }
     .list-item{
