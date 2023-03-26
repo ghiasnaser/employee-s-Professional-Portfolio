@@ -103,12 +103,22 @@ header nav{
     padding-bottom: 30px;
 }
 #My-projects h2{
+    display: flex;
+    flex-wrap: nowrap;
     width: var(--item-width);
     border-right: var(--borderstyle);
     border-color: var(--border-color);
     border-width: var(--border-width);
     padding-left: var(--left-padding);
     padding-right: var(--right-padding);
+}
+#My-projects h3{
+    display: block;
+    height: 30px;
+    text-align: center;
+}
+#My-projects p{
+    text-align: center;
 }
 #My-projects nav{
     padding-left: 5%;
