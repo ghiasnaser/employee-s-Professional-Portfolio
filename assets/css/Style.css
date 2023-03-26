@@ -131,7 +131,7 @@ header nav{
     
     transform: scale(1.2);
     border-width: 5px;
-    padding: 0;
+    padding: 30px;
     margin: 10px;
     filter: drop-shadow(0 0 1rem rgb(249, 234, 149));
    
