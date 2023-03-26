@@ -2,9 +2,9 @@
     --borderstyle: ridge;
     --border-color: rgb(217, 185, 227);
     --border-width:6px;
-    --left-padding:60px;
+    --left-padding:200px;
     --right-padding:0;
-    --item-width:15%;
+    --item-width:250px;
 }
 body{
     padding: 0;
@@ -345,5 +345,15 @@ footer p{
     header nav .list .list-item{
         text-align: center;
     }
-  
+   
+    #About-me h2{
+        padding-left: 10px;
+    }
+    #My-projects h2{
+        padding-left: 10px;
+        padding-right: 73px;
+    }
+    #Contact-me h2{
+        padding-left: 10px;
+    }
 }
