@@ -30,17 +30,23 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 header h1{
     padding-top: 20px;
     padding-left: 20px;
+    
     
 }
 header img{
     width: 125px;
     height: 135px;
     padding-left: 20px;
+ 
 }
 header nav{
     margin-left: 500px;
@@ -80,6 +86,7 @@ header nav{
     display: flex;
     height: 100%;
     width: 100%;
+    padding-top: 150px;
 }
 #About-me h2{
     width: var(--item-width);
@@ -202,7 +209,9 @@ footer p{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     header nav{
         margin-left: 480px;
@@ -233,7 +242,9 @@ footer p{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;;
     }
     header nav{
         margin-left: 430px;
@@ -264,7 +275,9 @@ footer p{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     header nav{
         margin-left: 330px;
@@ -295,7 +308,9 @@ footer p{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     header nav{
         display: block;
@@ -327,8 +342,11 @@ footer p{
     header{
         background-color: aquamarine;
         display: block;
-        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
         margin: auto;
+        
     }
     header img{
         display: block;
@@ -355,13 +373,16 @@ footer p{
     header nav .list .list-item{
         text-align: center;
     }
-   
+    #About-me{
+        padding-top: 320px;
+    }
     #About-me h2{
         padding-left: 10px;
+        
     }
     #My-projects h2{
         padding-left: 10px;
-        padding-right: 73px;
+
     }
     #Contact-me h2{
         padding-left: 10px;
